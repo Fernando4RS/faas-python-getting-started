@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Datapoints</title>
+    {{ turbo() }}  <!-- Initializes Turbo in the Flask app -->
+    <meta name="turbo-socket" content="true">
+    </head>
+<body>
+
+    <h1>EGV Values:</h1>
+        <div id="datapoints">
+            {% include 'data_points.html' %}
+        </div>
+    
+    <h1>EGV Time:</h1>
+        <div id="datatimes">
+            {% include 'data_times.html' %}
+        </div>
+
+</body>
+</html>
+
+
+
